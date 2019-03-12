@@ -106,6 +106,7 @@ print(mo)
 
 namesRegex = re.compile(r'Agent \w+')
 
-agentNamesRegex = re.compile(r'(Agent \w)\w*')
+agentNamesRegex = re.compile(r'(Agent \w)\w*') # \w 表示单个字母 \w*表示0个或以上的字母
 x = agentNamesRegex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
 print(x)
+
